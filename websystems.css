@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/*Loading Screen*/
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background: #fce4ec;
+    background-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: hideLoading 3.5s forwards;
+    }
+
+/*LoadingAnimation*/
+    @keyframes hideLoading {
+        0% { opacity : 1; }
+        100% { opacity: 1; visibility: hidden;}
+    }
+
+/*Pastel Gradient Background*/
+body {
+    background: linear-gradient(to bottom, #fcc4ec, #e1bee7, #bbdefb);
+    font-family:'Press Start 2P', cursive;
+    text-align:left;
+    color: #333;
+}
+
+/*Top Navigation Bar*/
+nav ul {
+    list-style: none;
+    padding: 0;
+    background-color: rgba(255, 255, 255,0.8);
+    border: 2px solid #ff4081;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff4081;
+    font-size: 11px;
+    padding: 8px;
+}
+
+nav ul li a:hover {
+    background: #ff80ab;
+    color: white;
+    border-radius: 5px;
+}
+
+/*Footer*/
+footer {
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    color: white;
+}
+
+/*Animations*/
+@keyframes soft-glow {
+    0% { text-shadow: 0 0 20px #ff4081; }
+    50% {text-shadow: 0 0 16px #ff80ab; }
+    100% {text-shadow: 0 0 20px #ff4081;}
+}
+
+h1 {
+    animation: soft-glow 2s infinite alternate;
+}
+
+/*Profile Container*/
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+/*Profile Image*/
+.profile-container img {
+    max-width: 225px;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Player Stats*/
+.player-stats {
+    max-width: 50%;
+    text-align: left;
+}
+
+/*Past Page Styling*/
+.past-section {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.past-section h2 {
+    color: #ba68c8;
+    font-size: 14px;
+}
+
+.past-section p {
+     font-size: 12px;
+    line-height: 1.6;
+}
+
+.project-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    width: 45%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 128, 171, 0.3);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    font-size: 12px;
+    background-color: #ff80ab;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.project-btn:hover,
+.project-btn:focus {
+    background-color: #ff4081;
+    outline: 3px solid #40e0d0;
+    outline-offset: 3px;
+}
+
+.gif-background {
+    background-image: url("images/background.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* optional for parallax effect */
+}
+
+/*Future Page Styling*/
+.future-section {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.future-section h2 {
+    color: #ba68c8;
+    font-size: 14px;
+}
+
+.future-section p {
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+/*Comments Page Styling*/
+.comments-section {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.comments-section h2 {
+    color: #ba68c8;
+    font-size: 14px;    
+}                                                                                               
+
+.comments-section p {
+    font-size: 12px;
+    line-height: 1.6;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 8px;
+    font-size: 14px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:550;
+}
+
+th {
+    background-color: #f8bbd0;
+}
+
+/*Scren Formatting*/
+/*Media Format For Phone*/
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .player-stats {
+        max-width: 100%;
+    }
+
+    .project-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 90%;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+/*KeyBoatd Accessibility*/
+a:focus,
+button:focus {
+    outline: 7px dashed #40e0d0;                                                                
+    outline-offset: 3px;
+}

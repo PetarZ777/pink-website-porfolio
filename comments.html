@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Past Page</title>
+        <link rel="stylesheet" href="websystems.css">
+    </head>
+    <body>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="past.html">Past Page</a></li>
+                <li><a href="future.html">Future Page</a></li>
+                <li><a href="comments.html">Comments Page</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Comments & Technical Details</h1>
+            <div class="comments-section">
+                <h2>Overall Structure</h2>
+                <p>The site contains four pages: index(home), past, future, and comments. Navigation between them is handled via HTML anchor tags inside a navigation bar that appears on the top for all the pages for consistency and efficient user interface.</p>
+                <h2>Internal Page Structure</h2>
+                <p>Each page uses semantic HTML5 tags including <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;div&gt;</code>, <code>&lt;footer&gt;</code>. The layout is kept simple using Flexbox for responsive alignment, and content is seperated using divs and semantic groupings.</p>
+                <h2>CSS Styling </h2>
+                <p>All styles are defined in <code>websystems.css</code>. I used a pastel gradient background, a custom Google font ("Press Start 2P"), and a soft animated loading screen. I've also included glowing animations, hover effects and rounded corners for an aesthetic retro feel.</p>
+                <h2 style="padding-top:25px","padding-bottom:1px">CSS Colours Utilised</h2>
+                <table>
+                    <tr><th>Colour</th><th>Application</th><th>Purpose</th></tr>
+                    <tr><td><span style='color: #333'>#333</span></td><td>h1 & p</td><td>Strong contrasting colour to be extremely legible.</td></tr>
+                    <tr><td><span style='color:#ba68c8'>#ba68c8</span></td><td>h2</td><td>Dark legible colour that wasn't black as the body font colour is black.</td></tr>
+                    <tr><td><span style='color:#fcc4ec'>#fcc4ec</span> <span style='color:#e1bee7'>#e1bee7</span> <span style='color:#bbdefb'>#bbdefb</span></td><td>Linear Gradient Background</td><td>Establishes primary colour pallete / aesthetic to the user, while making a soft and appropriate background for text.</td></tr>
+                    <tr><td style="background:black"><span style='color:rgba(255, 255, 255, 0.8)'>rgba(255, 255, 255,0.8)</span></td><td>Nav Bar Background & p Background</td><td>Contrasting colour from gradient background and font colour</td></tr>
+                    <tr><td><span style='color:#ff4081'>#ff4081</span></td><td>Nav Bar Border & Nav Bar Text</td><td>Darker colour then backgroudn to cfreate distinctive border.</td></tr>
+                    <tr><td><span style='color:#ff80ab'>#ff80ab</span></td><td>Nav Bar Hover</td><td>Third colour between background and text colour to create easy distinction and selection.</tr>
+                    <tr><td><span style='color:rgba(0, 0, 0, 0.2)'>rgba(0, 0, 0, 0.2)</span></td><td>Footer Background</td><td>Establoishes footer as important information to user, but seperates from the aesthetc of the website.</td></tr>
+                    <tr><td><span style='color:#ff4081'>#ff4081</span> <span style='color:#ff80ab'>#ff80ab</span></td><td>Glowing Effect on 'Player Stats'</td><td>Enhances the gamer girl softcore aesthetic</td></tr>
+                    <tr><td><span style='color:#f8bbd0'>#f8bbd0</span></td><td>table 1st Row Background</td><td>Another dark tone colour that wasn;t yet utilised to distinguish from background colour.</tr>
+                    <tr><td><span style='color:#40e0d0'>#40e0d0</span></td><td>Focus Style</td><td>Bright contrasting colour form white & pink was vital for the focus style as it needed to be clear and effortlesly legible to know where it was located.</td></tr>
+                </table>
+                <h2 style="padding-top:25px">CSS Selectors Implemented</h2>
+                <table>
+                    <tr><th>Selector</th><th>Type</th><th>Description</th></tr>
+                    <tr><td><code>#loading-screen</code></td><td>ID</td><td>CSS-only animated loading screen</td></tr>
+                    <tr><td><code>body</code></td><td>Element</td><td>Applied background gradient and font</td></tr>
+                    <tr><td><code>nav ul</code></td><td>Element</td><td>Used to structure the layout of the navigation bar</td></tr>
+                    <tr><td><code>nav ul li a</code></td><td>Element</td><td>Styled the text within the navigation bar</td></tr>
+                    <tr><td><code>nav ul li:a hover</code></td><td>Element</td><td>Styled the hover of the navigation bar</td></tr>
+                    <tr><td><code>footer</code></td><td>Element</td><td>Structured layout and styled footer section</td></tr>
+                    <tr><td><code>h1</code></td><td>Element</td><td>Styled with a soft-glow animation</td></tr>
+                    <tr><td><code>.profile-container</code></td><td>Class</td><td>Used to layout image and player stats side by side using Flexbox</td></tr>
+                    <tr><td><code>.player-stats</code></td><td>Class</td><td>Simplistic and gimicky about me section flexed and aligned to be next to profile picture</td></tr>
+                    <tr><td><code>.past-section</code></td><td>Class</td><td>Structure and Styling for Past Page</td></tr>
+                    <tr><td><code>.gif-background</code></td><td>Class</td><td>Applied animated background</td></tr>
+                    <tr><td><code>.future-section</code></td><td>Class</td><td>Structured and Styling for Future Page</td></tr>
+                    <tr><td><code>.comments-section</code></td><td>Class</td><td>Sturcture and Styling for Comments Page</td></tr>
+                    <tr><td><code>table</code></td><td>Element</td><td>Structure and Styling for tables.</td></tr>
+                    <tr><td><code>a:focus</code></td><td>Element</td><td>xyz</td></tr>
+                    <tr><td><code>button:focus</code></td><td>Pseudo-Class</td><td>xyz</td></tr>
+                </table>
+                <h2>Graphic Design</h2>
+                <p>I chose a cute, softcore, gamer aesthetic with pastel colours and a retro 2000s video game theme as my sister suggested it. Pixel fonts and images help create a cohesive vibe. Legibility and layout were important, so I used spacing, simple navigation, and clean structure.</p>
+                <h2>Accessibility Features</h2>
+                <p>Keyboard accessibility is an important part of the user experience. Affecting the experience of many users, mainly people with motor disabilities — any condition that limits movement or coordination.</p> 
+                <p>All images include <code>alt</code> text. I ensured the layout is readable without CSS by setting <code>width</code> and <code>height</code> in HTML and avoided JavaScript altogether as per assignment requirements.</p>
+                <p>I also utilised <code>a:focus, button:focus</code> in a bold contrasting colour <span style ="color: #40e0d0">#40e0d0</span> to make user selection legible (particularly Tab& Tab + Shift menu slection).</p>
+                <h2>Disabling CSS</h2>
+                <p>If CSS is disabled, the site remains functional and readable. I added sizing directly into HTML image tags so they don’t overflow. The structure remains in place with meaningful text and alt descriptions.</p>
+            </div>
+        </main>
+    </body>
+</html>
