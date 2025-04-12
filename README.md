@@ -76,4 +76,4 @@ A visually unique and accessible HTML/CSS-only portfolio website with a softcore
 ---
 
 ## 📁 File Structure
-gamer-girl-website/ ├── index.html ├── past.html ├── future.html ├── comments.html ├── websystems.css ├── images/ │ ├── background.gif │ ├── profile-pic.jpg │ ├── project1.jpg │ └── loading.gif ├── font/ │ └── custom-font.ttf (if applicable) └── README.md
+pixel-dream-website/ ├── index.html ├── past.html ├── future.html ├── comments.html ├── websystems.css ├── images/ │ ├── background.gif │ ├── profile-pic.jpg │ ├── project1.jpg │ └── loading.gif ├── font/ │ └── custom-font.ttf (if applicable) └── README.md
