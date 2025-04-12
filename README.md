@@ -8,7 +8,7 @@ A visually unique and accessible HTML/CSS-only portfolio website with a softcore
 
 ## 🌐 Live Demo
 
-🔗 [View it on GitHub Pages](https://petarz777.github.io/pink-website-porfolio/)
+🔗 [View it on GitHub Pages](https://petarz777.github.io/pixel-dream-website-porfolio/)
 
 ---
 
